@@ -417,6 +417,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 }
 .spam-btn{
+  fill:white;
+  cursor:pointer;
   margin-top: 33px;
   margin-left: 12px;
   height: 50px;
@@ -433,9 +435,18 @@ line-height: 1.87;
 display: flex;
   color: var(--color-white);
   background-color: var(--color-blue);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
+.spam-btn:hover,
+.spam-btn:focus {
+  fill:var(--color-blue);
+  color: var(--color-blue);
+  background-color: var(--color-innative-btn);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .btn-filter {
   background-color: var(--color-innative-btn);
@@ -838,11 +849,12 @@ margin-top: 16px;
   /* background-color: tomato; */
 }
 .modal-form-icon-checkbox{
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
     position: absolute;
     display: block;
-    width: 18px;
-    height: 18px;
-    fill: var(--color-black);
+    fill: white;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-policy-link{
@@ -853,11 +865,38 @@ margin-top: 16px;
 }
 
 .modal-form-checkbox:checked ~ .modal-form-policy-label::before {
-  background-color: var(--color-blue);
-  fill: #fff;
+ background-color: var(--color-blue);
 }
 
 .modal-form-checkbox:focus ~ .modal-form-policy-label::before {
 outline: 2px solid blue;
 
 }
+.modal-form-btn{
+  font-weight: bold;
+font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  color:var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 4px;
+  border: none;
+  letter-spacing: 0.06em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-btn:focus,
+.modal-form-btn:hover {
+  color: var(--color-black);
+  background-color: lightblue;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
