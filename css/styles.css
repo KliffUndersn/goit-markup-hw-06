@@ -375,7 +375,7 @@ header > .container,
 }
 .div-footer {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .footer-container {
   padding-top: 60px;
@@ -400,8 +400,8 @@ header > .container,
   color: var(--color-blue);
 }
 .footer-form-container{
-  margin-top: 12px;
-  margin-left: 93px;
+  padding-top: 12px;
+  padding-left: 93px;
   display: flex;
 }
 .footer-form-input{
@@ -653,8 +653,8 @@ margin-top: 16px;
   fill: #fff;
 }
 .join-list {
-  margin-top: 12px;
-  margin-left: 70px;
+  padding-top: 12px;
+  padding-left: 70px;
 }
 .join {
   text-transform: uppercase;
@@ -745,6 +745,7 @@ margin-top: 16px;
 }
 
 .modal-form-head {
+  display: block;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -764,7 +765,7 @@ margin-top: 16px;
 .modal-form-input-wrapper {
   position: relative;
   display: block;
-  margin-top: 4px;
+  padding-top: 4px;
  
 }
 
@@ -835,7 +836,10 @@ margin-top: 16px;
   display: flex;
   align-items: center;
   font-size: 12px;
-  margin-bottom: 20px;
+  font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color:var(--color-grey);
 }
 
 .modal-form-policy-label::before {
@@ -863,6 +867,7 @@ margin-top: 16px;
 }
 .modal-form-checkbox-wrapper {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .modal-form-checkbox:checked ~ .modal-form-policy-label::before {
